@@ -1,38 +1,296 @@
-.App {
+.container-panel {
+  min-height: 100vh;
+}
+.header-row {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+h4 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Comun properties*/
+.form-control::placeholder {
+  font-size: 13px !important;
+  color: rgb(175, 175, 175) !important;
+}
+.form-label {
+  font-size: 13px !important;
+  font-weight: bold;
+  color: rgb(158, 156, 156);
+}
+.row-title {
+  padding: 10px 10px 0px 10px;
+}
+.button-gestion {
+  background-color: black !important;
+  color: white !important;
+  font-size: 13px !important;
+  border-radius: 0% !important;
+}
+.button-gestion:hover {
+  background-color: rgb(107, 107, 107) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Pedidos*/
+.img-pedidos {
+  width: 200px;
+  height: 180px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row-envio-info {
+  padding-top: 20px;
+}
+.col-info-icon {
   display: flex;
-  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+}
+.row-info-individual {
+  padding-top: 5px;
+  font-size: 15px;
+}
+.col-estado-order {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 15px;
+  color: grey;
+}
+.col-number-order{
+  font-size: 15px;
+  color: grey;
+}
+.col-number-order span{
+  font-weight: bold;
+  color: black;
+}
+.col-number-order, .col-estado-order {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.col-cancelar-pedido {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+.col-imagen-item {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row-pedido {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.col-order-inicial {
+  padding: 5px 50px 0px 50px !important;
+}
+.row-item {
+  padding: 8px 70px 8px 70px !important;
+}
+.row-name-product {
+  padding: 20px 70px 0px 20px !important;
+}
+.row-description-product {
+  font-size: 12px;
+  padding: 10px 70px 0px 20px !important;
+}
+.row-stock-product {
+  font-size: 15px;
+  padding: 3px 70px 0px 20px !important;
+}
+.row-price-product {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px 70px 15px 20px !important;
+}
+.col-order{
+  color: rgb(128, 128, 128);
+}
+.col-order, .col-order-value {
+  padding: 7px 15px 0px 15px !important;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+/*Login*/
+.col-login {
+  padding: 5px 80px 0px 80px !important;
+}
+.col-forgot-pss {
+  text-align: right;
+  padding: 8px 20px 0px 0px !important;
+  font-size: 12px;
+  color: rgb(136, 134, 134);
+}
+.col-forgot-pss a {
+  cursor: pointer;
+}
+.col-forgot-pss a:hover {
+  color: rgb(63, 63, 63) !important;
+}
+.col-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 5px 10px 5px;
+}
+#create-account-button {
+  width: 40%;
+}
+#login-button {
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/*Create account*/
+.row-message-1-create-account, .row-message-2-create-account {
+  font-size: 12px;
+  color: rgb(136, 134, 134);
+}
+.row-message-1-create-account {
+  padding: 30px 25px 0px 25px;
+}
+.row-message-2-create-account {
+  padding: 8px 25px 0px 25px;
+}
+.col-button-create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 5px 10px 5px;
+}
+
+/*Register*/
+.row-register {
+  padding: 15px 5px 0px 5px;
+}
+.col-register-shipment {
+  padding: 15px 0px 0px 0px;
+}
+.col-register-login {
+  padding: 15px 80px 0px 80px !important;
+}
+.col-register-login .row {
+  padding: 15px 3px 0px 3px;
+}
+.col-register-button-create,  .col-register-button-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-register-button-create {
+  padding: 70px 0px 10px 0px;
+}
+#create-register-button {
+  width: 30%;
+}
+.col-register-button-cancel button{
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(143, 143, 143) !important;
+  font-size: 13px !important;
+  border-radius: 0% !important;
+}
+
+/*Reset password*/
+.col-message-reset-pass, .col-button-reset-pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-message-reset-pass {
+  padding: 15px 5px 15px 5px;
+}
+.col-button-reset-pass {
+  padding: 50px 5px 10px 5px;
+}
+.row-email-reset-pass {
+  padding: 20px 5px 10px 5px;
+}
+.col-message-reset-pass div{
+  font-size: 12px;
+  color: rgb(136, 134, 134);
+  text-align: center;
+  width: 75%;
+}
+#reset-pass-button {
+  width: 60% !important;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1560px) {
+  .row-order-completo {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border: 3px solid red !important;
   }
 }
+@media screen and (max-width: 1401px) {
+  .col-order, .col-order-value {
+    padding: 7px 5px 0px 15px !important;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .col-login {
+    padding: 5px 40px 0px 40px !important;
+  }
+}
+@media screen and (max-width: 1399px) {
+  #create-register-button {
+    width: 40%;
+  }
+} 
+@media screen and (max-width: 1300px) {
+  .col-register-login {
+    padding: 15px 40px 0px 40px !important;
+  }
+} 
+@media screen and (max-width: 1046px) {
+  .col-message-reset-pass div{
+    width: 85%;
+  }
+} 
+@media screen and (max-width: 991px) {
+  .col-register-shipment {
+    padding: 0px 0px 0px 0px;
+  }
+  #create-register-button {
+    width: 50%;
+  }
+  .col-register-login {
+    padding: 15px 14px 0px 14px !important;
+  }
+  .row-order-completo {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    border: 3px solid red !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .row-email-reset-pass {
+    padding: 20px 12px 10px 12px;
+  }
+  .col-label-register-md {
+    padding: 15px 15px 0px 15px !important;
+  }
+  #create-register-button {
+    width: 60%;
+  } 
+  .col-login {
+    padding: 5px 20px 0px 20px !important;
+  }
+  .col-order-inicial {
+    padding: 5px 0px 0px 0px !important;
+  }
+}
+@media screen and (max-width: 620px) {
+  .col-message-reset-pass div{
+    width: 90%;
+  }
+} 
