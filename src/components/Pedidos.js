@@ -11,11 +11,11 @@ function Pedidos() {
                 <div className="col-12">Pedidos realizados en el último año</div>
             </div>
             <div className="row row-order-completo">
-                <div className="col-12 col-xl-1"></div>
-                <div className="col-12 col-xl-10 col-order-inicial">
+                <div className="col-12 col-xxl-1"></div>
+                <div className="col-12 col-xxl-10 col-order-inicial">
                     <Order></Order>
                 </div>
-                <div className="col-12 col-xl-1"></div>
+                <div className="col-12 col-xxl-1"></div>
             </div>
         </Fragment>);  
 }; 
