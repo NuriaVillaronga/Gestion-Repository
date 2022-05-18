@@ -102,7 +102,7 @@ h4 {
   justify-content: right;
 }
 .col-imagen-item {
-  padding-top: 5px;
+  padding-top: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +123,7 @@ h4 {
   border-bottom: 1px solid rgba(223, 223, 223, 0.746);
 }
 .row-name-product {
-  padding: 20px 20px 0px 50px !important;
+  padding: 17px 20px 0px 50px !important;
 }
 .row-description-product {
   font-size: 12px;
@@ -261,23 +261,24 @@ h4 {
 }
 
 /*Responsive*/
-
+@media screen and (max-width: 1650px) {
+  .col-information-item {
+    padding-right:  0px !important;
+  }
+  .row-name-product, .row-description-product, .row-stock-product, .row-price-product {
+    padding-left: 25px !important;
+  }
+  .row-item {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
 @media screen and (max-width: 1560px) {
   .row-order-completo {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .row-item {
-    padding: 8px 40px 8px 40px !important;
-  }
-  .row-name-product, .row-description-product, .row-stock-product, .row-price-product {
-    padding-right: 10px !important;
-  }
-}
-@media screen and (max-width: 1515px) {
-  .row-item {
-    padding: 8px 32px 8px 32px !important;
-  }
+  
 }
 @media screen and (max-width: 1401px) {
   .col-order, .col-order-value {
