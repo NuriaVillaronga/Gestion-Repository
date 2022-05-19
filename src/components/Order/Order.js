@@ -1,5 +1,5 @@
 import React,  {Fragment} from 'react';
-import Item from './Item';
+import ItemProduct from './ItemProduct';
 import { faCircle, faLocationDot, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ItemInfoOrder from './ItemInfoOrder';
@@ -19,8 +19,8 @@ function Order() {
             <div className="row row-items-total">
                 <div className="col-12 col-lg-1 col-xxl-2"></div>
                 <div className="col-12 col-lg-10 col-xxl-8">
-                    <Item></Item>
-                    <Item></Item>
+                    <ItemProduct></ItemProduct>
+                    <ItemProduct></ItemProduct>
                 </div>
                 <div className="col-12 col-lg-1 col-xxl-2"></div>
             </div>

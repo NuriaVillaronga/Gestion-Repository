@@ -1,14 +1,11 @@
 import React,  {Fragment} from 'react';
 import ManagementButton from '../ManagementButton';
+import TitleHeader from '../TitleHeader';
 
 function CreateAccount() { 
 
   return (<Fragment>
-            <div className="row row-title border">
-                <div className="col-12">
-                    <h4>CREATE ACCOUNT</h4>
-                </div>
-            </div>
+            <TitleHeader title="CREATE ACCOUNT"/>
             <div className="row row-message-1-create-account">
                 <div className="col-12">
                     <span>Nuevo en G15NV89?</span>

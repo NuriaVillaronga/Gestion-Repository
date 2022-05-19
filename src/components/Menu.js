@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header () { 
+function Menu() { 
 
   return (<div className="row header-row">
             <div className="col-10">Logo</div>
@@ -9,4 +9,4 @@ function Header () {
         </div>);  
 }; 
 
-export default Header;
+export default Menu;

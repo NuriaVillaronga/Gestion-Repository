@@ -113,10 +113,10 @@ h4 {
 .row-pedido {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: rgba(239, 239, 239, 0.422);
+  background-color: rgba(239, 239, 239, 0.254);
 }
 .row-cabecera-pedidos {
-  background-color: rgba(239, 239, 239, 0.422);
+  background-color: rgba(239, 239, 239, 0.407);
 }
 .col-order-inicial {
   padding: 5px 50px 0px 50px !important;
@@ -506,4 +506,18 @@ h4 {
     padding-top: 7px !important;
     color: rgb(128, 128, 128);
   }
+}
+
+.invalid_input {
+  border: 2px solid red !important;
+}
+.show_error {
+  padding-top: 3px;
+  padding-left: 3px;
+  display: block;
+  color: red;
+  font-size: 11px;
+}
+.hidde_error {
+  display: none;
 }

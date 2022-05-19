@@ -1,7 +1,8 @@
 import React,  {Fragment} from 'react';
 import imagen from '../../camiseta.jpg';
+import ItemInfoProduct from './ItemInfoProduct';
 
-function Item() { 
+function ItemProduct() { 
 
   return (<Fragment>
             <div className="row row-item"> 
@@ -9,18 +10,10 @@ function Item() {
                     <img className="img-pedidos" src={imagen}></img>
                 </div>
                 <div className="col-12 col-md-7 col-lg-7 col-information-item">
-                    <div className="row row-name-product">
-                        <div className="col-12">CAMISETA NEGRA DE ALGODÓN</div>
-                    </div>
-                    <div className="row row-description-product">
-                        <div className="col-12">Descripción breve</div>
-                    </div>
-                    <div className="row row-stock-product">
-                        <div className="col-12">2 x 16,87 €</div>
-                    </div>
-                    <div className="row row-price-product">
-                        <div className="col-12">33,74 €</div> 
-                    </div>
+                    <ItemInfoProduct classCol="row-name-product" value="CAMISETA NEGRA DE ALGODÓN"/>
+                    <ItemInfoProduct classCol="row-description-product" value="Descripción breve"/>
+                    <ItemInfoProduct classCol="row-stock-product" value="2 x 16,87 €"/>
+                    <ItemInfoProduct classCol="row-price-product" value="33,74 €"/>
                     <div className="row row-xsm-order">
                         <div className="col-12">
                             <span className='price-separado-span'>2 x 16,87</span>
@@ -32,4 +25,4 @@ function Item() {
         </Fragment>);  
 }; 
 
-export default Item;
+export default ItemProduct;
