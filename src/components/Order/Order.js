@@ -21,6 +21,8 @@ function Order() {
                 <div className="col-12 col-lg-10 col-xxl-8">
                     <ItemProduct></ItemProduct>
                     <ItemProduct></ItemProduct>
+                    <ItemProduct></ItemProduct>
+                    <ItemProduct></ItemProduct>
                 </div>
                 <div className="col-12 col-lg-1 col-xxl-2"></div>
             </div>

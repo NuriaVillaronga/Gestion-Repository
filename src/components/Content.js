@@ -8,9 +8,9 @@ import { Route } from 'react-router-dom';
 
 function Content() { 
 
-  return (<div className="row border">
+  return (<div className="row">
             <div className="col-1"></div>
-            <div className="col-10 border">
+            <div className="col-10">
                 <Routes>
                     <Route exact path="/pedidos" element={<Pedidos/>}/>
                   <Route exact path="/login" element={<Login/>}/>

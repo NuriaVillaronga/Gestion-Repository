@@ -4,7 +4,7 @@ import Order from './Order';
 function Pedidos() { 
 
   return (<Fragment>
-            <div className="row border row-pedidos-content">
+            <div className="row row-pedidos-content">
                 <div className="col-12">MIS PEDIDOS</div>
                 <div className="col-12">Pedidos realizados en el último año</div>
                 <div className="row row-order-completo">

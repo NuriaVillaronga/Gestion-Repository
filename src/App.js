@@ -11,7 +11,7 @@ function App() {
         <div className="container-fluid container-panel">
           <Menu></Menu>
           <Content></Content>
-          <footer>Hola</footer>
+          <Footer></Footer>
       </div>
   </Router>
   );

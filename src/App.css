@@ -1,17 +1,29 @@
 .container-panel {
   min-height: 100vh;
 }
-.header-row {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.menu-row {
+  position: fixed;
+  width: 100% !important;
 }
-footer-row {
+.sub-header-row {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgb(0, 0, 0);
-  color: white;
+}
+.header-row {
+  color: black;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(219, 219, 219);
+}
+footer {
+  position: absolute;
+  margin-bottom: 0px !important;
+  width: 100%;
+  min-height: 15vh;
+  background-color: rgb(0, 0, 0);
 }
 h4 {
   text-align: center;
@@ -38,6 +50,12 @@ h4 {
 }
 .button-gestion:hover {
   background-color: rgb(107, 107, 107) !important;
+}
+
+/*Containers*/
+.container-login, .row-pedidos-content {
+  margin-top: 200px !important;
+  margin-bottom: 100px !important;
 }
 
 /*Pedidos*/
