@@ -19,12 +19,12 @@ function Order() {
                 </div>
             </div>
             <div className="row row-items-total">
-                <div className="col-2"></div>
-                <div className="col-8">
+                <div className="col-12 col-lg-1 col-xxl-2"></div>
+                <div className="col-12 col-lg-10 col-xxl-8">
                     <Item></Item>
                     <Item></Item>
                 </div>
-                <div className="col-2"></div>
+                <div className="col-12 col-lg-1 col-xxl-2"></div>
             </div>
             <div className="row row-pedido">
                 <div className="col-12 row-estado-sm">

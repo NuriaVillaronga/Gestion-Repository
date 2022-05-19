@@ -83,6 +83,9 @@ h4 {
   font-size: 15px;
   color: grey;
 }
+.row-xsm-order {
+  display: none !important;
+}
 .col-number-order span{
   font-weight: bold;
   color: black;
@@ -278,7 +281,6 @@ h4 {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  
 }
 @media screen and (max-width: 1401px) {
   .col-order, .col-order-value {
@@ -287,8 +289,13 @@ h4 {
   }
 }
 @media screen and (max-width: 1399px) {
-  .row-item {
-    padding: 8px 10px 8px 10px !important;
+  .col-imagen-item img{
+    margin-right: -70px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .col-imagen-item img{
+    margin-right: -35px !important;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -331,6 +338,11 @@ h4 {
     padding: 7px 5px 0px 15px !important;
   }
 }  
+@media screen and (max-width: 1094px) {
+  .col-imagen-item img{
+    margin-right: 0px !important;
+  }
+}
 @media screen and (max-width: 1046px) {
   .col-message-reset-pass div{
     width: 85%;
@@ -357,6 +369,9 @@ h4 {
   .col-cancelar-pedido {
     display: none !important;
   }
+  .col-imagen-item img{
+    margin-right: -30px !important;
+  }
 }
 @media screen and (max-width: 888px) {
   .img-pedidos {
@@ -372,8 +387,19 @@ h4 {
   .row-name-product {
     padding: 15px 10px 0px 20px !important;
   }
+  .row-stock-product {
+    padding: 3px 10px 0px 20px !important;
+  }
+}
+@media screen and (max-width: 810px) {
+  .col-imagen-item img{
+    margin-right: -10px !important;
+  }
 }
 @media screen and (max-width: 767px) {
+  .col-information-item {
+    border: none !important;
+  }
   .row-email-reset-pass {
     padding: 20px 12px 10px 12px;
   }
@@ -398,9 +424,29 @@ h4 {
     width: 160px;
     height: 140px;
   }
-  .row-name-product, .row-description-product, .row-stock-product, .row-price-product {
-    padding: 0px 5px 0px 5px !important;
+  .row-name-product, .row-description-product, .row-stock-product, .row-price-product, .row-xsm-order {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
     text-align: center;
+  }
+  .row-xsm-order {
+    display: block !important;
+    padding-top: 5px;
+  }
+  .price-separado-span {
+    font-size: 11.5px;
+    color: rgb(119, 119, 119);
+  }
+  .price-total-span {
+    font-weight: bold;
+    font-size: 19px;
+    padding-left: 10px;
+  }
+  .row-name-product {
+    font-size: 15px
+  }
+  .row-stock-product, .row-price-product {
+    display: none !important;
   }
   .col-order {
     padding-bottom: 0px !important;
