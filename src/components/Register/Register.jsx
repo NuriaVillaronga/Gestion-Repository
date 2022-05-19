@@ -3,6 +3,7 @@ import ManagementButton from '../ManagementButton';
 import TitleHeader from '../TitleHeader';
 import RegisterInfoShipment from './RegisterInfoShipment';
 import RegisterInfoSignIn from './RegisterInfoSignIn';
+import { Link } from 'react-router-dom';
 
 function Register() { 
 
@@ -17,7 +18,9 @@ function Register() {
                             <RegisterInfoShipment/>
                         </div>
                         <ManagementButton classCol="col-12 col-register-button-create" classBtn="button-gestion" id="create-register-button" value="CREAR CUENTA"/>
-                        <ManagementButton classCol="col-12 col-register-button-cancel" classBtn="" id="" value="CANCELAR"/>
+                        <Link to="/login">
+                            <ManagementButton classCol="col-12 col-register-button-cancel" classBtn="" id="" value="CANCELAR"/>
+                        </Link>
                     </form>
                 </div>
             </div>);  

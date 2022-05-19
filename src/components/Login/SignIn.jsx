@@ -2,6 +2,7 @@ import React,  { useState, Fragment} from 'react';
 import ManagementButton from '../ManagementButton';
 import ItemForm from '../ItemForm';
 import TitleHeader from '../TitleHeader';
+import { Link } from 'react-router-dom';
 
 function SignIn() { 
 
@@ -24,7 +25,9 @@ function SignIn() {
                         </div>
                         <div className="row">
                             <div className="col-12 col-forgot-pss"> 
-                                <a>Forgot your password?</a>
+                                <Link to="/reset-password">
+                                    <a>Forgot your password?</a>
+                                </Link>
                             </div>
                         </div>
                         <div className="row">

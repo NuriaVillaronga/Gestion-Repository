@@ -2,6 +2,7 @@ import React,  { useState, Fragment} from 'react';
 import ManagementButton from '../ManagementButton';
 import ItemForm from '../ItemForm';
 import TitleHeader from '../TitleHeader';
+import { Link } from 'react-router-dom';
 
 
 function ResetPassword() {  
@@ -29,7 +30,9 @@ function ResetPassword() {
                                     <ManagementButton classCol="col-12 col-button-reset-pass" classBtn="button-gestion" id="reset-pass-button" value="ENVIAR EMAIL"/>
                                 </div>
                                 <div className="row">
-                                    <ManagementButton classCol="col-12 col-register-button-cancel" classBtn="" id="" value="CANCELAR"/>
+                                    <Link to="/login">
+                                        <ManagementButton classCol="col-12 col-register-button-cancel" classBtn="" id="" value="CANCELAR"/>
+                                    </Link>
                                 </div>
                             </form>
                         </div>

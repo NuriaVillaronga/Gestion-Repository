@@ -7,7 +7,7 @@ function RegisterInfoSignIn() {
     const [pass, setPass] = useState({field:"", valid: null});
     const [passConf, setPassConf] = useState({field:"", valid: null});
 
-    const regExp_pass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+    const regExp_pass = /^(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
     const regExp_email = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
   return (<Fragment>

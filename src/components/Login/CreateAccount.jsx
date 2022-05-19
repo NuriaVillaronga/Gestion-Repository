@@ -1,6 +1,7 @@
 import React,  {Fragment} from 'react';
 import ManagementButton from '../ManagementButton';
 import TitleHeader from '../TitleHeader';
+import { Link } from 'react-router-dom';
 
 function CreateAccount() { 
 
@@ -17,7 +18,9 @@ function CreateAccount() {
                 </div>
             </div>
             <div className="row">
-                <ManagementButton classCol="col-12 col-button-create-account" classBtn="button-gestion" id="create-account-button" value="CREAR CUENTA"/>
+                <Link to="/register">
+                    <ManagementButton classCol="col-12 col-button-create-account" classBtn="button-gestion" id="create-account-button" value="CREAR CUENTA"/>
+                </Link>
             </div>
         </Fragment>);  
 }; 
