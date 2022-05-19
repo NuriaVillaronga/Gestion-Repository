@@ -7,6 +7,12 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+footer-row {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 h4 {
   text-align: center;
 }

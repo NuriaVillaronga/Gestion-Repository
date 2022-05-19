@@ -4,7 +4,7 @@ import SignIn from './SignIn';
 
 function Login() { 
 
-  return (<div className="row">
+  return (<div className="row container-login">
             <div className="col-12 col-lg-6"><SignIn/></div>
             <div className="col-12 col-lg-6"><CreateAccount/></div>
         </div>);  
