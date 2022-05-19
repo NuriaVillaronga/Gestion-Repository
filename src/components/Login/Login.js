@@ -1,4 +1,6 @@
 import React,  {Fragment} from 'react';
+import ManagementButton from '../ManagementButton';
+import ItemForm from '../ItemForm';
 
 function Login() { 
 
@@ -12,16 +14,10 @@ function Login() {
                 <div className="col-12 col-login">
                     <form>
                         <div className="row row-register">
-                            <div className="col-12">
-                                <label className="form-label">EMAIL</label>
-                                <input className="form-control"></input>
-                            </div>
+                            <ItemForm classCol="col-12" type="email" placeholder="" title="EMAIL"/>
                         </div>
                         <div className="row row-register">
-                            <div className="col-12">
-                                <label className="form-label">PASSWORD</label>
-                                <input className="form-control"></input>
-                            </div>
+                            <ItemForm classCol="col-12" type="password" placeholder="" title="PASSWORD"/>
                         </div>
                         <div className="row">
                             <div className="col-12 col-forgot-pss">
@@ -29,9 +25,7 @@ function Login() {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-12 col-login-button">
-                                <button className="btn button-gestion" id="login-button">LOGIN</button>
-                            </div>
+                            <ManagementButton classCol="col-12 col-login-button" classBtn="button-gestion" id="login-button" value="LOGIN"/>
                         </div>
                     </form>
                 </div>

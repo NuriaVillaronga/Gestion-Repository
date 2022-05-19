@@ -1,5 +1,5 @@
 import React,  {Fragment} from 'react';
-import imagen from '../camiseta.jpg';
+import imagen from '../../camiseta.jpg';
 
 function Item() { 
 

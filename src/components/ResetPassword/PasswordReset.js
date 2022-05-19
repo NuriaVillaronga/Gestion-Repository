@@ -1,4 +1,7 @@
 import React,  {Fragment} from 'react';
+import ManagementButton from '../ManagementButton';
+import ItemForm from '../ItemForm';
+
 
 function PasswordReset() { 
 
@@ -20,20 +23,13 @@ function PasswordReset() {
                         <div className="col-12">
                             <form>
                                 <div className="row row-email-reset-pass">
-                                    <div className="col-12">
-                                        <label className="form-label">EMAIL</label>
-                                        <input className="form-control"></input>
-                                    </div>
+                                    <ItemForm classCol="col-12" type="email" placeholder="" title="EMAIL"/>
                                 </div>
                                 <div className="row">
-                                    <div className="col-12 col-button-reset-pass">
-                                        <button className="btn button-gestion" id="reset-pass-button">ENVIAR EMAIL</button>
-                                    </div>
+                                    <ManagementButton classCol="col-12 col-button-reset-pass" classBtn="button-gestion" id="reset-pass-button" value="ENVIAR EMAIL"/>
                                 </div>
                                 <div className="row">
-                                    <div className="col-12 col-register-button-cancel">
-                                        <button className="btn">CANCELAR</button>
-                                    </div>
+                                    <ManagementButton classCol="col-12 col-register-button-cancel" classBtn="" id="" value="CANCELAR"/>
                                 </div>
                             </form>
                         </div>

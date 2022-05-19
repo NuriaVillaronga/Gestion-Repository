@@ -17,6 +17,9 @@ function Pedidos() {
                 </div>
                 <div className="col-12 col-xxl-1"></div>
             </div>
+            <div className="row border">
+                <div className="col-12">Pagination</div>
+            </div>
         </Fragment>);  
 }; 
 

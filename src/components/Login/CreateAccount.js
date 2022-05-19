@@ -1,4 +1,5 @@
 import React,  {Fragment} from 'react';
+import ManagementButton from '../ManagementButton';
 
 function CreateAccount() { 
 
@@ -19,9 +20,7 @@ function CreateAccount() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12 col-button-create-account">
-                    <button className="btn button-gestion" id="create-account-button">CREATE ACCOUNT</button>
-                </div>
+                <ManagementButton classCol="col-12 col-button-create-account" classBtn="button-gestion" id="create-account-button" value="CREAR CUENTA"/>
             </div>
         </Fragment>);  
 }; 

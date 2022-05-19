@@ -1,9 +1,9 @@
 import React from 'react';
-import CreateAccount from './CreateAccount';
-import Login from './Login';
-import PasswordReset from './PasswordReset';
-import Pedidos from './Pedidos';
-import Register from './Register';
+import CreateAccount from './Login/CreateAccount';
+import Login from './Login/Login';
+import PasswordReset from './ResetPassword/PasswordReset';
+import Pedidos from './Order/Pedidos';
+import Register from './Register/Register';
 
 function Content() { 
 
