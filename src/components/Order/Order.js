@@ -17,14 +17,14 @@ function Order() {
                 <ManagementButton classCol="col-lg-3 col-xxl-4 col-cancelar-pedido" classBtn="button-gestion" id="" value="CANCELAR PEDIDO"/>
             </div>
             <div className="row row-items-total">
-                <div className="col-12 col-lg-1 col-xxl-2"></div>
-                <div className="col-12 col-lg-10 col-xxl-8">
+                <div className="col-12 col-sm-1 col-xxl-2"></div>
+                <div className="col-12 col-sm-10 col-xxl-8">
                     <ItemProduct></ItemProduct>
                     <ItemProduct></ItemProduct>
                     <ItemProduct></ItemProduct>
                     <ItemProduct></ItemProduct>
                 </div>
-                <div className="col-12 col-lg-1 col-xxl-2"></div>
+                <div className="col-12 col-sm-1 col-xxl-2"></div>
             </div>
             <div className="row row-pedido">
                 <div className="col-12 row-estado-sm">

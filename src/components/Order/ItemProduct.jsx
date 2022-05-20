@@ -6,10 +6,10 @@ function ItemProduct() {
 
   return (<Fragment>
             <div className="row row-item"> 
-                <div className="col-12 col-md-5 col-lg-5 col-imagen-item">
+                <div className="col-5 col-lg-5 col-imagen-item">
                     <img className="img-pedidos" src={imagen}></img>
                 </div>
-                <div className="col-12 col-md-7 col-lg-7 col-information-item">
+                <div className="col-7 col-lg-7 col-information-item">
                     <ItemInfoProduct classCol="row-name-product" value="CAMISETA NEGRA DE ALGODÓN"/>
                     <ItemInfoProduct classCol="row-description-product" value="Descripción breve"/>
                     <ItemInfoProduct classCol="row-stock-product" value="2 x 16,87 €"/>
