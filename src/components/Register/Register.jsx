@@ -4,11 +4,19 @@ import TitleHeader from '../TitleHeader';
 import RegisterInfoShipment from './RegisterInfoShipment';
 import RegisterInfoSignIn from './RegisterInfoSignIn';
 import { Link } from 'react-router-dom';
+import { Breadcrumb } from 'react-bootstrap';
 
 function Register() { 
 
   return (<div className="row">
-                <div className="col-12 border">
+                <div className='col-12 container-breadcrumb'>
+                    <Breadcrumb>
+                        <Breadcrumb.Item href="/">HOME</Breadcrumb.Item>
+                        <Breadcrumb.Item href="/login">LOGIN</Breadcrumb.Item>
+                        <Breadcrumb.Item active>REGISTRO</Breadcrumb.Item>
+                    </Breadcrumb>
+                </div>
+                <div className="col-12 container-specific-content">
                     <TitleHeader title="CREATE ACCOUNT"/>
                     <form className="row">
                         <div className="col-12 col-lg-5 col-register-login">
