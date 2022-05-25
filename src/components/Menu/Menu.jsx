@@ -19,11 +19,11 @@ function Menu() {
         setShowNovedades(false);
     }
 
-    return (<nav className="row menu-row">
-            <div className="col-12 sub-header-row">
+    return (<nav className="row menu">
+            <div className="col-12 secundary-header">
                 <SecundaryHeader/>
             </div>
-            <div className="col-12 header-row">
+            <div className="col-12 main-header">
                 <MainHeader handleShowNovedades={handleShowNovedades} handleHiddeNovedades={handleHiddeNovedades}/>
             </div>
             <MenuNovedades showNovedades={showNovedades} handleShowNovedades={handleShowNovedades} handleHiddeNovedades={handleHiddeNovedades}/>
