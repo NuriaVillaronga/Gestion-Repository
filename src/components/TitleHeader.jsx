@@ -2,9 +2,9 @@ import React from 'react';
 
 function TitleHeader(props) { 
 
-  return (<div className="row row-title border">
+  return (<div className="row" id={props.id}>
             <div className="col-12">
-                <h4>{props.title}</h4> 
+                {props.title} 
             </div>
         </div>);  
 }; 

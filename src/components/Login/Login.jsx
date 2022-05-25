@@ -15,7 +15,7 @@ function Login() {
               <div className='col-12 container-specific-content'>
                   <div className='row'>
                       <div className="col-12 col-lg-6"><SignIn/></div>
-                      <div className="col-12 col-lg-6"><CreateAccount/></div>
+                      <div className="col-12 col-lg-6 create-account"><CreateAccount/></div>
                   </div>
               </div>
           </div>);  

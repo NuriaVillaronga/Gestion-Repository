@@ -13,7 +13,7 @@ function SignIn() {
     const regExp_required =/^$/;
 
   return (<Fragment>
-            <TitleHeader title="SIGN IN"/>
+            <TitleHeader title="SIGN IN" id="signin-title"/>
             <div className="row">
                 <div className="col-12 col-login">
                     <form>
