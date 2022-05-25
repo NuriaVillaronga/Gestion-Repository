@@ -7,9 +7,9 @@ function Pedidos() {
   return (<div className="row">
                 <div className='col-12 container-breadcrumb'>
                     <Breadcrumb>
-                        <Breadcrumb.Item href="/">HOME</Breadcrumb.Item>
-                        <Breadcrumb.Item href="/login">LOGIN</Breadcrumb.Item>
-                        <Breadcrumb.Item active>PEDIDOS</Breadcrumb.Item>
+                        <Breadcrumb.Item href="/" className='breadcrumb-link'>HOME</Breadcrumb.Item>
+                        <Breadcrumb.Item href="/login" className='breadcrumb-link'>LOGIN</Breadcrumb.Item>
+                        <Breadcrumb.Item active className='breadcrumb-active'>PEDIDOS</Breadcrumb.Item>
                     </Breadcrumb>
                 </div>
                 <div className="col-12 container-specific-content">

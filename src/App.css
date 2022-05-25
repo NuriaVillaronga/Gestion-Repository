@@ -212,6 +212,16 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   margin-top: 80px !important;
   margin-bottom: 130px;
 }
+.breadcrumb-active a {
+  color: grey !important;
+}
+.breadcrumb-link a {
+  text-decoration: none !important;
+  color: grey;
+}
+.breadcrumb-link a:hover {
+  color: rgb(46, 46, 46);
+}
 
 
 .container-panel {
