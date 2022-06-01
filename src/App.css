@@ -165,14 +165,12 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
 .container-ofertas-expli {
   border: 1px solid black;
 }
-
 .items-izq {
   padding-left: 70px !important;
 }
 .items-der {
   padding-right: 70px !important;
 }
-
 .alert-menu-ofertas {
   height: 565px;
   background-color: white !important;
@@ -201,15 +199,16 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   padding-right: 80px !important;
   padding-top: 70px !important;
 }
-
 .desplegar-1570 {
   display: none !important;
 }
 #canvas-menu {
+  border: none !important;
   background-color: aquamarine;
   margin-top: 104px !important;
   width: 100% !important;
-  margin-left: 0px !important;
+  height: 41.7% !important;
+  display: none !important;
 }
 .alert-menu-explora {
   height: 565px;
@@ -231,15 +230,78 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
 .desplegar-1700, .desplegar-1500 {
   display: none !important;
 }
-
 .row-RESPONSIVE-menu {
   display: none !important;
 }
-
 #btn-close-menu {
   display: none;
 }
+.offcanvas-body {
+  padding: 0px !important;
 
+}
+.list-group {
+  width: 100% !important;
+  border-radius: 0% !important;
+  border: none !important;
+}
+.list-item-vacios {
+  padding-top: 20px !important;
+}
+#backdrop-menu-res {
+  margin-top: 104px !important;
+}
+#row-search-res {
+  display: none;
+}
+#cruz, #lupa {
+  border: none !important;
+  background-color: transparent;
+}
+#input-group-search {
+  border: 1px solid rgb(214, 214, 214);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.res-input-search {
+  border: none !important;
+}
+.res-input-search::placeholder {
+  padding-left: 0px !important;
+}
+.button-close-carrito {
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(143, 143, 143) !important;
+  font-size: 13px !important;
+  border-radius: 0% !important;
+  border: none !important;
+}
+#canvas-carrito {
+  width: 500px !important;
+  border: none !important;
+}
+.cabecera-canvas-carro {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+.canvas-titulo {
+  text-align: left;
+  padding-left: 5px !important;
+  font-size: 22px;
+  font-weight: bold;
+}
+.canvas-items {
+  text-align: left;
+  padding-left: 2px !important;
+  font-size: 13.5px;
+  color: rgb(177, 177, 177);
+}
+.canvas-cerrar {
+  text-align: right;
+  padding-right: 0px !important;
+}
 /*********************************************************
 ***************************LOGIN***************************
 **********************************************************/
@@ -341,8 +403,8 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   min-height: 100vh;
 }
 
-footer {
-  position: absolute;
+.footer-class {
+  position: absolute !important;
   margin-bottom: 0px !important;
   width: 100%;
   min-height: 15vh;
@@ -570,375 +632,383 @@ footer {
 /*Responsive*/
 @media screen and (max-width: 1800px) {
   .items-izq {
-    padding-left: 130px !important;
+  padding-left: 130px !important;
   }
   .items-der {
-    padding-right: 130px !important;
+  padding-right: 130px !important;
   }
 }
 @media screen and (max-width: 1750px) {
   #col-image-clothes {
-    padding-left: 70px !important;
+  padding-left: 70px !important;
   }
 }
 @media screen and (max-width: 1700px) {
   .desplegar-1700 {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   }
   .ocultar-1700 {
-    display: none !important;
+  display: none !important;
   }
   #col-image-ofertas {
-    padding-right: 70px !important;
+  padding-right: 70px !important;
   }
 }
 @media screen and (max-width: 1650px) {
   .col-information-item {
-    padding-right:  0px !important;
+  padding-right:  0px !important;
   }
   .row-name-product, .row-description-product, .row-stock-product, .row-price-product {
-    padding-left: 25px !important;
+  padding-left: 25px !important;
   }
   .row-item {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
   }
   .row-featured-clothes {
-    padding-left: 30px !important;
+  padding-left: 30px !important;
   }  
 }
 @media screen and (max-width: 1570px) {
   .desplegar-1570 {
-    display: block !important;
+  display: block !important;
   }
   .ocultar-1570 {
-    display: none !important;
+  display: none !important;
   }
   #col-image-clothes {
-    padding-left: 110px !important;
+  padding-left: 110px !important;
   }
   #image-clothes { 
-    width: 410px !important;
+  width: 410px !important;
   }
   #col-image-ofertas {
-    padding-right: 50px !important;
+  padding-right: 50px !important;
   }
 }
 @media screen and (max-width: 1560px) {
   .row-order-completo {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   }
   .container-featured-ofertas-image {
-    height: 210px !important; 
-    width: 230px !important;
+  height: 210px !important; 
+  width: 230px !important;
   }
 }
 @media screen and (max-width: 1500px) {
   .clothes {
-    padding-left: 20px !important;
+  padding-left: 20px !important;
   }
   .desplegar-1500 {
-    display: block !important;
+  display: block !important;
   }
   .ocultar-1500 {
-    display: none !important;
+  display: none !important;
   }
 }
 @media screen and (max-width: 1480px) {
   #col-image-clothes {
-    padding-left: 80px !important;
+  padding-left: 80px !important;
   }
   .desplegar-1480 {
-    display: block !important;
+  display: block !important;
   }
   .ocultar-1480 {
-    display: none !important;
+  display: none !important;
   }
 }
 @media screen and (max-width: 1401px) {
   .col-order {
-    padding: 7px 5px 0px 15px !important;
+  padding: 7px 5px 0px 15px !important;
   }
   .col-order-value {
-    padding-left:  0px !important;
+  padding-left:  0px !important;
   }
   .items-izq {
-    padding-left: 50px !important;
+  padding-left: 50px !important;
   }
   .items-der {
-    padding-right: 50px !important;
+  padding-right: 50px !important;
   }
 }
 @media screen and (max-width: 1399px) {
   .col-imagen-item img{
-    margin-right: -70px !important;
+  margin-right: -70px !important;
   }
   .oculto-espacio-menu {
-    display: none !important;
+  display: none !important;
   }
   .hidde-xl {
-    display: none !important;
+  display: none !important;
   }
   .clothes {
-    padding-left: 5px !important;
+  padding-left: 5px !important;
   }
 }
 @media screen and (max-width: 1360px) {
   #col-image-clothes {
-    padding-left: 60px !important;
+  padding-left: 60px !important;
   }
   #col-image-explora {
-    padding-left: 70px !important;
+  padding-left: 70px !important;
   }
 }
 @media screen and (max-width: 1265px) {
   .row-enlace-explora {
-    padding-left: 60px !important;
+  padding-left: 60px !important;
   }
 }
 @media screen and (max-width: 1250px) {
   .hidde-space-menu {
-    display: none !important;
+  display: none !important;
   }
   .show-space-menu {
-    display: block !important;
+  display: block !important;
   }
 }
 @media screen and (max-width: 1200px) {
   .col-imagen-item img{
-    margin-right: -35px !important;
+  margin-right: -35px !important;
   }
   .row-enlace-explora {
-    padding-left: 80px !important;
+  padding-left: 80px !important;
   }
   #col-image-explora {
-    padding-left: 50px !important;
+  padding-left: 50px !important;
   }
   #col-image-clothes {
-    padding-left: 40px !important;
+  padding-left: 40px !important;
   }
 }
 @media screen and (max-width: 1199px) {
   .col-login {
-    padding: 5px 40px 0px 40px !important;
+  padding: 5px 40px 0px 40px !important;
   }
   .row-show-lg {
-    display: block !important;
+  display: block !important;
   }
   .row-info-individual {
-    display: none !important;
+  display: none !important;
   }
   .lg-display-none {
-    display: none !important;
+  display: none !important;
   }
   .oculto-espacio-menu {
-    display: block !important;
+  display: block !important;
   }
   .hidde-xl {
-    display: block !important;
+  display: block !important;
   }
 }
 @media screen and (max-width: 1149px) {
   .alert-menu-clothes, .alert-menu-explora, .alert-menu-ofertas {
-    display: none !important;
+  display: none !important;
   }
   .css-wmhsuj-MuiBackdrop-root {
-    opacity: 0 !important;
+  opacity: 0 !important;
   }
   .row-ALL-menu {
-    display: none !important;
+  display: none !important;
   }
   .row-RESPONSIVE-menu {
-    display: flex !important;
+  display: flex !important;
+  }
+  #canvas-menu {
+  display: block !important;
   }
 }
 @media screen and (max-width: 1399px) {
   #create-register-button {
-    width: 40%;
+  width: 40%;
   }
 } 
 @media screen and (max-width: 1300px) {
   .col-register-login {
-    padding: 15px 40px 0px 40px !important;
+  padding: 15px 40px 0px 40px !important;
   }
 }
 @media screen and (max-width: 1199px) {
   .icon-pedido {
-    display: none;
+  display: none;
   }
   .row-envio-info {
-    padding: 0px !important;
+  padding: 0px !important;
   }
   .row-info-individual {
-    padding-top: 0px !important;
-    font-size: 14px;
+  padding-top: 0px !important;
+  font-size: 14px;
   }
   .texto-icon {
-    display: inline;
+  display: inline;
   }
   .col-info-icon {
-    padding: 7px 5px 0px 15px !important;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    color: rgb(128, 128, 128);
+  padding: 7px 5px 0px 15px !important;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  color: rgb(128, 128, 128);
   }
   .col-info-icon-value {
-    padding: 7px 5px 0px 15px !important;
+  padding: 7px 5px 0px 15px !important;
   }
 }  
 @media screen and (max-width: 1094px) {
   .col-imagen-item img{
-    margin-right: 0px !important;
+  margin-right: 0px !important;
   }
 }
 @media screen and (max-width: 1046px) {
   .col-message-reset-pass div{
-    width: 85%;
+  width: 85%;
   }
 } 
 @media screen and (max-width: 991px) {
   .col-register-shipment {
-    padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   }
   #create-register-button {
-    width: 50%;
+  width: 50%;
   }
   .col-register-login {
-    padding: 15px 14px 0px 14px !important;
+  padding: 15px 14px 0px 14px !important;
   }
   .row-order-completo {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
   }
   .row-sm {
-    padding-top: 60px;
-    display: block !important;
+  padding-top: 60px;
+  display: block !important;
   }
   .col-cancelar-pedido {
-    display: none !important;
+  display: none !important;
   }
   .col-imagen-item img{
-    margin-right: -30px !important;
+  margin-right: -30px !important;
   }
 }
 @media screen and (max-width: 888px) {
   .img-pedidos {
-    width: 170px;
-    height: 150px;
+  width: 170px;
+  height: 150px;
   }
   .row-price-product {
-    padding: 8px 10px 10px 20px !important;
+  padding: 8px 10px 10px 20px !important;
   }
   .row-description-product {
-    padding: 6px 10px 0px 20px !important;
+  padding: 6px 10px 0px 20px !important;
   }
   .row-name-product {
-    padding: 22px 10px 0px 20px !important;
+  padding: 22px 10px 0px 20px !important;
   }
   .row-stock-product {
-    padding: 3px 10px 0px 20px !important;
+  padding: 3px 10px 0px 20px !important;
   }
 }
 @media screen and (max-width: 810px) {
   .col-imagen-item img{
-    margin-right: -10px !important;
+  margin-right: -10px !important;
   }
 }
 @media screen and (max-width: 767px) {
   .col-information-item {
-    border: none !important;
+  border: none !important;
   }
   .row-email-reset-pass {
-    padding: 20px 12px 10px 12px;
+  padding: 20px 12px 10px 12px;
   }
   .col-label-register-md {
-    padding: 15px 15px 0px 15px !important;
+  padding: 15px 15px 0px 15px !important;
   }
   #create-register-button {
-    width: 60%;
+  width: 60%;
   } 
   .col-login {
-    padding: 5px 20px 0px 20px !important;
+  padding: 5px 20px 0px 20px !important;
   }
   .col-order-inicial {
-    padding: 5px 20px 0px 20px !important;
+  padding: 5px 20px 0px 20px !important;
   }
   .col-imagen-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   } 
   .img-pedidos {
-    width: 160px;
-    height: 140px;
+  width: 160px;
+  height: 140px;
   }
   .row-name-product {
-    padding-top: 15px !important;
+  padding-top: 15px !important;
   }
   .row-name-product, .row-description-product, .row-stock-product, .row-price-product, .row-xsm-order {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-    text-align: center;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  text-align: center;
   }
   .row-xsm-order {
-    display: block !important;
-    padding-top: 5px;
+  display: block !important;
+  padding-top: 5px;
   }
   .price-separado-span {
-    font-size: 11.5px;
-    color: rgb(119, 119, 119);
+  font-size: 11.5px;
+  color: rgb(119, 119, 119);
   }
   .price-total-span {
-    font-weight: bold;
-    font-size: 19px;
-    padding-left: 10px;
+  font-weight: bold;
+  font-size: 19px;
+  padding-left: 10px;
   }
   .row-name-product {
-    font-size: 15px
+  font-size: 15px
   }
   .row-stock-product, .row-price-product {
-    display: none !important;
+  display: none !important;
   }
   .col-order {
-    padding-bottom: 0px !important;
+  padding-bottom: 0px !important;
   }
   .col-order-value {
-    padding-top: 0px !important;
+  padding-top: 0px !important;
   }
   .col-info-icon-value {
-    padding-top: 0px !important;
+  padding-top: 0px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #canvas-carrito {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 620px) {
   .col-message-reset-pass div{
-    width: 90%;
+  width: 90%;
   }
 }
 @media screen and (max-width: 575px) {
   .col-estado-order {
-    display: none !important;
+  display: none !important;
   }
   .row-estado-sm {
-    display: inline !important;
-    padding-left: 25px !important;
+  display: inline !important;
+  padding-left: 25px !important;
   }
   .row-show-sm {
-    display: block !important;
-    padding-left: 10px;
+  display: block !important;
+  padding-left: 10px;
   }
   .row-show-lg, .row-order {
-    display: none !important;
+  display: none !important;
   }
   .row-s-sm-t, .row-s-sm-v {
-    font-size: 14px;
+  font-size: 14px;
   }
   .row-s-sm-t {
-    padding-top: 7px !important;
-    color: rgb(128, 128, 128);
+  padding-top: 7px !important;
+  color: rgb(128, 128, 128);
   }
 }
 

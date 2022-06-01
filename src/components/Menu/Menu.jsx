@@ -41,17 +41,17 @@ function Menu() {
     }
 
     return (<nav className="row menu">
-            <div className="col-12 secundary-header">
-                <SecundaryHeader/>
-            </div>
-            <div className="col-12 main-header"> 
-                <MainHeader handleShowClothes={handleShowClothes} handleHiddeClothes={handleHiddeClothes} handleShowOfertas={handleShowOfertas} handleHiddeOfertas={handleHiddeOfertas} handleShowExplora={handleShowExplora} handleHiddeExplora={handleHiddeExplora}/>
-            </div>
-            <MenuOfertas showOfertas={showOfertas} handleShowOfertas={handleShowOfertas} handleHiddeOfertas={handleHiddeOfertas}/>
-            <MenuExplora showExplora={showExplora} handleShowExplora={handleShowExplora} handleHiddeExplora={handleHiddeExplora}/>
-            <MenuClothes showClothes={showClothes} handleShowClothes={handleShowClothes} handleHiddeClothes={handleHiddeClothes}/>
-            <Backdrop sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 7 }} open={openFilter}></Backdrop>
-        </nav>);  
+                <div className="col-12 secundary-header">
+                    <SecundaryHeader/>
+                </div>
+                <div className="col-12 main-header"> 
+                    <MainHeader handleShowClothes={handleShowClothes} handleHiddeClothes={handleHiddeClothes} handleShowOfertas={handleShowOfertas} handleHiddeOfertas={handleHiddeOfertas} handleShowExplora={handleShowExplora} handleHiddeExplora={handleHiddeExplora}/>
+                </div>
+                <MenuOfertas showOfertas={showOfertas} handleShowOfertas={handleShowOfertas} handleHiddeOfertas={handleHiddeOfertas}/>
+                <MenuExplora showExplora={showExplora} handleShowExplora={handleShowExplora} handleHiddeExplora={handleHiddeExplora}/>
+                <MenuClothes showClothes={showClothes} handleShowClothes={handleShowClothes} handleHiddeClothes={handleHiddeClothes}/>
+                <Backdrop sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 7 }} open={openFilter}></Backdrop>
+            </nav>);  
 };
 
 export default Menu;
