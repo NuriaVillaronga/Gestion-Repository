@@ -42,54 +42,32 @@ function MainHeader(props) {
 
     return (<Fragment>
                 <div className="row row-ALL-menu">
-                    <div className="col-3"> 
-                        <div className='row'>
-                            <div className='col-12 col-logo'>G15VN89</div>
-                        </div>
+                    <div className="col-3 col-logo"> 
+                        <div>G15VN89</div>
                     </div>
-                    <div className="col-6 col-lg-5 col-xxl-6">
-                        <div className='row'>
-                            <div className='col-12'>
-                                <div className='row'>
-                                    <div className='col-1 show-space-menu'/>
-                                    <div className="col-3 menu-item" id="menu-item-novedades">NOVEDADES</div>
-                                    <div className='col-2 menu-item' id="menu-item-clothes" onMouseOver={props.handleShowClothes} onMouseOut={props.handleHiddeClothes}>CLOTHES</div>
-                                    <div className='col-2 menu-item' id="menu-item-ofertas" onMouseOver={props.handleShowOfertas} onMouseOut={props.handleHiddeOfertas}>OFERTAS</div>
-                                    <div className='col-3 menu-item' id="menu-item-explora" onMouseOver={props.handleShowExplora} onMouseOut={props.handleHiddeExplora}>EXPLORA</div>
-                                    <div className='col-2 hidde-space-menu'/>
-                                    <div className='col-1 show-space-menu'/>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="col-6 col-menu-medio">
+                        <div className='menu-item' onMouseOver={props.handleShowClothes} onMouseOut={props.handleHiddeClothes}>TIENDA</div>
+                        <div className='menu-item' onMouseOver={props.handleShowOfertas} onMouseOut={props.handleHiddeOfertas}>EXLUSIVOS</div>
+                        <div className='menu-item'>SOBRE NOSOTROS</div>
                     </div>
-                    <div className="col-4 col-xxl-3"> 
-                        <div className='row'>
-                            <div className='col-2'/>
-                            <div className='col-10'>
-                                <div className='row'>
-                                    <div className='col-8 col-search-input'><input className='form-control' id="search-input" placeholder='SEARCH'/></div>
-                                    <div className='col-4'>
-                                        <div className="row">
-                                            <div className="col-4 col-icon-user"><PopUser/></div>
-                                            <div className="col-4 col-icon-carrito"><PopCarrito/></div>
-                                            <div className="col-4"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="col-3 col-busquedas"> 
+                        <div className="col-search">
+                            <input id="search-input" placeholder='BUSCAR'/>
                         </div>
+                        <div className="col-user"><PopUser/></div>
+                        <div className="col-carrito"><PopCarrito/></div>            
                     </div>
                 </div>
                 <div className="row row-RESPONSIVE-menu">
                     <div className='col-12' id="responsive-menu">
                         <div className='row'>
-                            <div className="col-4 col-lg-4 border"> 
+                            <div className="col-4 col-lg-4">  
                                 <PopMenu showMenu={showMenu} setShowMenu={setShowMenu} openBackdrop={openBackdrop} setOpenBackdrop={setOpenBackdrop} handleHiddeMenu={handleHiddeMenu} handleShowMenu={handleShowMenu}/>
                             </div>
-                            <div className="col-4 col-lg-4 border">
+                            <div className="col-4 col-lg-4">
                                 Logo
                             </div>
-                            <div className="col-4 col-lg-4 border"> 
+                            <div className="col-4 col-lg-4"> 
                                 <div className="row">
                                     <div className="col-4"><PopSearch/></div>
                                     <div className="col-4 col-icon-user"><PopUser/></div>

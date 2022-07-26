@@ -3,20 +3,32 @@
 **********************************************************/
 
 /*----------Posicionamientos----------*/
-#menu-item-clothes, #menu-item-ofertas, .col-icon-user, .col-logo, .item-clothes, .col-featured-clothes-image, .col-featured-clothes-title, .message-secundary-header { 
+.col-featured-clothes-image, .col-featured-clothes-title, .message-secundary-header { 
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#menu-item-clothes, #dropdown-toggle-user, #col-image-ofertas { 
+#col-image-ofertas { 
   display: flex;
   align-items: right;
   justify-content: right;
 }
-#menu-item-explora { 
-  display: flex;
-  align-items: left;
-  justify-content: left;
+
+/*::::::Titulos menu::::::*/
+.img-vestidos, .img-calzado {
+  width: 100px;
+}
+.img-bolsos {
+  width: 80px;
+}
+.img-accesorios {
+  width: 150px;
+}
+.img-camisetas {
+  width: 180px;
+}
+.img-pantalones, .img-sudaderas, .img-abrigos {
+  width: 220px;
 }
 
 /*:::::::::Menu::::::::::*/ 
@@ -32,10 +44,7 @@
 }
 .main-header { 
   color: rgb(0, 0, 0);
-  padding-top: 20px;
-  padding-bottom: 0px;
   background-color: rgb(255, 255, 255);
-  height: 70px;
   border-bottom: 1px solid rgba(219, 219, 219, 0.548);
 }
 .css-wmhsuj-MuiBackdrop-root {
@@ -43,40 +52,59 @@
 }
 
 /*:::::::::MainHeader::::::::::*/
-.col-logo {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+.row-ALL-menu {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.col-icon-carrito {
-  padding-left: 2px !important;
-} 
+.menu-item {
+  font-size: 11px;
+  border-bottom: 2px solid black;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 5px;
+}
+.col-menu-medio{
+  text-align: center;
+}
 .col-search-input { 
   padding-right: 5px !important;
+  padding-top: 5px;
+}
+#search-input::placeholder {
+  font-size: 11px !important;
+  color: black !important;
 }
 #search-input {
   border: none !important;
   background-color: transparent !important;
   border-radius: 0% !important;
-  border-bottom: 1px solid rgb(0, 0, 0) !important;
-  width: 100% !important;
+  border-bottom: 1px solid black !important;
+  padding: 0px !important;
+  font-size: 11px;
+}
+.col-busquedas {
+  text-align: right;
   padding: 0px !important;
 }
-#search-input::placeholder {
-  font-size: 13px !important;
-  color: rgb(0, 0, 0) !important;
+.col-search, .col-user {
+  margin-left: 4px;
+  margin-right: 4px;
 }
-.show-space-menu {
-  display: none !important;
+.col-carrito {
+  margin-left: 3px;
+  margin-right: 10px;
 }
-#menu-item-clothes { 
-  padding-left: 35px !important;
+.col-busquedas div {
+  display: inline !important;
 }
-#menu-item-ofertas { 
-  padding-left: 5px !important;
+.col-logo {
+  text-align: left;
+  padding: 0px !important;
 }
-.menu-item {
-  font-size: 15px;
-  padding-top: 5px;
+.col-logo div {
+  margin-left: 10px;
 }
 
 /*:::::::::MenuClothes::::::::::*/
@@ -85,21 +113,79 @@
   background-color: white !important;
   border: none !important; 
 }
-#image-clothes { 
-  width: 570px;
+.swiper-button-next, .swiper-button-prev {
+  display: none !important;
 }
-#col-image-clothes {
-  padding-left: 90px !important;
-  padding-top: 16px;
+.swiper {
+  width: 75% !important;
+  text-align: center !important;
+  margin-top: 25px !important;
 }
-.item-list-clothes, .row-featured-clothes { 
-  height: 50%;
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 28px !important;
 }
-.item-clothes { 
+.swiper-pagination-bullet {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 50% !important;
+}
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+.col-enlaces {
+  text-align: center;
+}
+.title-slider, .price-slider {
+  font-size: 10px;
+  color: black;
+  padding: 0px !important;
+}
+.title-slider {
+  text-align: left;
+}
+.price-slider {
+  text-align: right;
+}
+.info-slider {
+  margin-top: 4px !important;
+  margin-left: 15px !important;
+  margin-right: 14.5px !important;
+  padding: 0px !important;
+}
+.grp {
+  display:inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+.todos-div {
+  margin-top: 50px;
+}
+.button-todo {
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  font-size: 11px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 40% !important;
+  margin-top: 35px;
+}
+.todos-content {
+  font-size: 11px;
   color: black;
 }
-.featured-clothes-content {  
-  height: 100% !important;
+.todos-content div {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.div-titulo-menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-slide {
+  width: 300px;
 }
 
 /*:::::::::FeaturedItemClothes::::::::::*/
@@ -638,11 +724,6 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   padding-right: 130px !important;
   }
 }
-@media screen and (max-width: 1750px) {
-  #col-image-clothes {
-  padding-left: 70px !important;
-  }
-}
 @media screen and (max-width: 1700px) {
   .desplegar-1700 {
   display: flex !important;
@@ -667,9 +748,6 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   padding-right: 15px !important;
   padding-left: 15px !important;
   }
-  .row-featured-clothes {
-  padding-left: 30px !important;
-  }  
 }
 @media screen and (max-width: 1570px) {
   .desplegar-1570 {
@@ -677,12 +755,6 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   }
   .ocultar-1570 {
   display: none !important;
-  }
-  #col-image-clothes {
-  padding-left: 110px !important;
-  }
-  #image-clothes { 
-  width: 410px !important;
   }
   #col-image-ofertas {
   padding-right: 50px !important;
@@ -710,9 +782,6 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   }
 }
 @media screen and (max-width: 1480px) {
-  #col-image-clothes {
-  padding-left: 80px !important;
-  }
   .desplegar-1480 {
   display: block !important;
   }
@@ -749,9 +818,6 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   }
 }
 @media screen and (max-width: 1360px) {
-  #col-image-clothes {
-  padding-left: 60px !important;
-  }
   #col-image-explora {
   padding-left: 70px !important;
   }
@@ -778,9 +844,6 @@ button#dropdown-toggle-user.dropdown-toggle.btn.btn-primary::after {
   }
   #col-image-explora {
   padding-left: 50px !important;
-  }
-  #col-image-clothes {
-  padding-left: 40px !important;
   }
 }
 @media screen and (max-width: 1199px) {

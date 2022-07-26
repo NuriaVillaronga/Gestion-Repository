@@ -1,8 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-bootstrap';
 import { Alert } from 'react-bootstrap';
-import imagen from '../../ofertas5.png';
-import imagen2 from '../../ofertas2.png';
 import ManagementButton from '../ManagementButton';
 
 function MenuOfertas(props) { 
@@ -36,8 +34,7 @@ function MenuOfertas(props) {
                     <div className="col-6">
                         <div className="row">
                             <div className="col-12" id="col-image-ofertas">
-                                <img src={imagen} id="image-ofertas" className="ocultar-1480"></img> 
-                                <img src={imagen2} id="image-ofertas" className="desplegar-1480"></img> 
+                                aa
                             </div>
                         </div>
                     </div>
