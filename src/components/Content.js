@@ -12,7 +12,7 @@ function Content() {
             <div className="col-12 col-md-1"></div>
             <div className="col-12 col-md-10">
                 <Routes>
-                    <Route exact path="/pedidos" element={<Pedidos/>}/>
+                  <Route exact path="/pedidos" element={<Pedidos/>}/>
                   <Route exact path="/login" element={<Login/>}/>
                   <Route exact path="/register" element={<Register/>}/>
                   <Route exact path="/reset-password" element={<ResetPassword/>}/>

@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import { NavLink } from "react-router-dom"
 
 function PopCarrito(props) { 
 
@@ -18,6 +19,10 @@ function PopCarrito(props) {
         setShowCarrito(false);
     }
 
+    const handleClickPayment = () => {
+        setShowCarrito(false);
+    }
+
     return (<Fragment>
                 <Button variant="light" onClick={handleShowCarrito} id="btn-canvas-carrito">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-cart" viewBox="0 0 16 16">
@@ -31,9 +36,13 @@ function PopCarrito(props) {
                             <div className='col-3 canvas-items'>n Items</div>
                             <div className='col-2 canvas-cerrar'><button className="button-close-carrito" onClick={handleHiddeCarrito}>Cerrar</button></div>
                         </div>
+                        <div className='row'>
+                            <NavLink to="/pedidos"><button type="button" onClick={handleClickPayment}>PRUEBA</button></NavLink>
+                        </div>
                     </Offcanvas.Body>
                 </Offcanvas>
             </Fragment>);  
 };
 
+/*Navlink va a tener que ir a pagos*/
 export default PopCarrito;
